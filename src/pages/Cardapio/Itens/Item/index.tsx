@@ -5,8 +5,7 @@ import cardapio from '../itens.json';
 
 type Props = (typeof cardapio)[0];
 const Item = (props: Props) => {
-  const { title, category, description, id, price, serving, size, photo } =
-    props;
+  const { title, category, description, price, serving, size, photo } = props;
   return (
     <div className={styles.item}>
       <img src={photo} alt={title} className={styles.item__imagem} />
